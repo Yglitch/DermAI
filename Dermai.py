@@ -15,7 +15,7 @@ else:
     model = joblib.load(MODEL_PATH)
 
 # Classes
-CLASSES = ['cut', 'burn', 'abrasions', 'normal skin']
+CLASSES = ['Cut', 'Burns', 'Abrasions', 'normal']
 
 st.title("🩹 DermAI - Wound Detection")
 st.write("Upload an image or capture from webcam to detect wounds.")
@@ -87,4 +87,5 @@ if capture_btn:
 
         cap.release()
         cv2.destroyAllWindows()
+
 
