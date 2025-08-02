@@ -92,5 +92,5 @@ Store prediction history in CSV for analysis
 
 👨‍💻 Author
 Yash Rana
-GitHub: @YOUR_USERNAME
+GitHub: @Yglitch
 
