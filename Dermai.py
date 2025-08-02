@@ -5,9 +5,8 @@ import joblib
 import os
 from datetime import datetime
 
-# ------------------------------
 # Load Model
-# ------------------------------
+
 MODEL_PATH = "model.pkl"
 
 if not os.path.exists(MODEL_PATH):
@@ -21,9 +20,9 @@ CLASSES = ['cut', 'burn', 'abrasions', 'normal skin']
 st.title("🩹 DermAI - Wound Detection")
 st.write("Upload an image or capture from webcam to detect wounds.")
 
-# ------------------------------
+
 # Feature Extraction
-# ------------------------------
+
 def extract_features_from_array(img_array):
     """Extract features from image array for prediction."""
     img = cv2.resize(img_array, (64, 64))  # resize to match model input
@@ -37,9 +36,9 @@ def predict_image_array(img_array):
     prediction = model.predict(features)[0]
     return CLASSES[prediction]
 
-# ------------------------------
+
 # File Upload Section
-# ------------------------------
+
 st.subheader("📤 Upload an Image")
 uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
 
@@ -88,3 +87,4 @@ if capture_btn:
 
         cap.release()
         cv2.destroyAllWindows()
+
