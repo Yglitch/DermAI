@@ -35,10 +35,7 @@ DermAI/
 │ └─ normal skin/
 └─ README.md
 
-yaml
-Copy
-Edit
-
+Create your own dataset using kaggle 
 ---
 
 ## ⚡ Installation
