@@ -26,13 +26,24 @@ The project is built with **Python, OpenCV, Scikit-learn, and Streamlit**, and i
 
 DermAI/
 ├─ Dermai.py # Streamlit app for wound detection
+
+
 ├─ train_model.py # Script to train a balanced RandomForest model
+
+
 ├─ model.pkl # Trained RandomForest model
+
+
 ├─ dataset/ # Dataset folder (not uploaded to GitHub)
+
 │ ├─ cut/
+
 │ ├─ burn/
+
 │ ├─ abrasions/
+
 │ └─ normal skin/
+
 └─ README.md
 
 Create your own dataset using kaggle 
