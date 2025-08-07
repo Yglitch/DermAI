@@ -47,6 +47,7 @@ DermAI/
 └─ README.md
 
 Create your own dataset using kaggle 
+https://www.kaggle.com/datasets/yasinpratomo/wound-dataset/data
 ---
 
 ## ⚡ Installation
